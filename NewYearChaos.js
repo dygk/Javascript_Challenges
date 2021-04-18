@@ -40,9 +40,11 @@ function readLine() {
                         count++;
             }
 
-            console.log(isChoatic ? "Too chaotic" : count);
+            //console.log(isChoatic ? "Too chaotic" : count);
+            return isChoatic ? "Too chaotic" : count;
 
 }
+module.exports =minimumBribes;
 
 function main() {
     const t = parseInt(readLine(), 10);
