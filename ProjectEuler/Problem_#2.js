@@ -41,25 +41,28 @@ function readLine() {
 // beginning = next_even
 
 function main() {
+    const BigNumber = require('bignumber.js');
     var t = parseInt(readLine());
     for(var a0 = 0; a0 < t; a0++){
-        var n = BigInt(parseInt(readLine()));
-        let result= BigInt(2);
-        let x= BigInt(1);y= BigInt(2);
-         while(x+y<n)
-         {
-             var a=(x+y);
-             if(a % 2n==0)
-              result +=a;          
+        var n =  BigNumber(parseInt(readLine()));
+        
+        let factor=  BigNumber(2);
+        
+        while(factor <= Math.sqrt(n) )
+        {
+            if(n%factor == BigNumber(0))
+            n /= factor;
+            else
+            factor++;
             
-               
-             x=y;
-             y=a;
-             
-            
-         }
-         
-        console.log(String(result).slice(0, result.length))
+        }
+         if(n> factor)
+         console.log(n.toString());
+         else
+          console.log(factor.toString());
+        //console.log(String(factor).slice(0, factor.length))
+      
+        
         
     }
 
