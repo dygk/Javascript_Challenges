@@ -34,7 +34,8 @@ function readLine() {
 
 
 function rotLeft(a, d) {
-    // Write your code here
+    /// Write your code here
+
     const newArray=[];
     for(var i=0; i<a.length; i++)
     {
@@ -44,6 +45,7 @@ function rotLeft(a, d) {
     }
     
 return newArray;
+
 }
 
 function main() {
