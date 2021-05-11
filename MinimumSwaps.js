@@ -26,7 +26,9 @@ function readLine() {
 
 // Complete the minimumSwaps function below.
 function minimumSwaps(arr) {
+    
     const map = new Map();
+
     arr.forEach((arr_i, i) => map.set(arr_i, i));
     return arr.reduce((swaps, arr_i, i) => {
         const correctValue = i + 1;
