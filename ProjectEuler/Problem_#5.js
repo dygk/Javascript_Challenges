@@ -22,6 +22,7 @@ function readLine() {
   return input_stdin_array[input_currentline++];
 }
 
+
 function SolutionByLCM(n) {
   var a = 1;
   for (var i = 1; i <= n; i++) {
