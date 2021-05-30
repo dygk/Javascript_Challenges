@@ -33,6 +33,8 @@ function SolutionByLCM(n) {
   }
   return a;
 }
+
+
 function MySolution(n) {
   let firstHashmap = new Map([[2, 0], [3, 0], [5, 0], [7, 0], [11, 0]
   ]);
